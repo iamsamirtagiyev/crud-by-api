@@ -1,0 +1,100 @@
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.loader{
+    width: 80px;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+thead{
+    width: 100%;
+    text-align: left;
+    display: none;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table td:last-child,
+.table th:last-child{
+    width: 20%;
+}
+.table td:first-child,
+.table th:first-child{
+    width: 5%;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+}
+
+.table th {
+    padding: 10px;
+    background-color: #006eff;
+    color: white;
+}
+
+.input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: solid 1px #ddd;
+    padding:  0 10px;
+}
+.input-box input{
+    font-size: 18px;
+    text-transform: capitalize;
+    background: transparent;
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-box i{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.add{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background: #006eff;
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+
+.add i{
+    font-size: 25px;
+    color: #fff;
+}
+
+.add:hover{
+    background: #085ece;
+}
