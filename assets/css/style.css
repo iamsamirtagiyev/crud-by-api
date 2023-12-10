@@ -1,6 +1,6 @@
 h1 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 70px;
     cursor: pointer;
 }
 
@@ -16,24 +16,15 @@ h1 {
 thead{
     width: 100%;
     text-align: left;
-    display: none;
 }
 
 .table td,
 .table th {
     border: 1px solid #ddd;
     padding: 8px;
+    cursor: pointer;
 }
 
-.table td:last-child,
-.table th:last-child{
-    width: 20%;
-}
-.table td:first-child,
-.table th:first-child{
-    width: 5%;
-    text-align: center;
-}
 
 .table tr:nth-child(even) {
     background-color: #f2f2f2;
@@ -48,7 +39,6 @@ thead{
     background-color: #006eff;
     color: white;
 }
-
 .input-box{
     display: flex;
     align-items: center;
@@ -57,7 +47,7 @@ thead{
     border: solid 1px #ddd;
     padding:  0 10px;
 }
-.input-box input{
+input{
     font-size: 18px;
     text-transform: capitalize;
     background: transparent;
@@ -97,4 +87,105 @@ label{
 
 .add:hover{
     background: #085ece;
+}
+
+button, a{
+    background: #006eff;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 18px;
+    transition: all .5s ease;
+    width: 100%;
+    text-align: center;
+}
+button:hover, a:hover{
+    background: #085ece;
+}
+
+.table tr td:last-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.errorMessage{
+    position: absolute;
+    background: rgba(255, 0, 0, .3);
+    border: solid 2px red;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    top: -150px;
+    transition: all .5s ease;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    text-align: center;
+}
+.errorMessage.active{
+    top: 15px;
+}
+
+.successMessage{
+    position: absolute;
+    background: rgba(0, 255, 0, .3);
+    border: solid 2px green;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    text-transform: capitalize;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    top: -150px;
+    transition: all .5s ease;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    text-align: center;
+}
+.successMessage.active{
+    top: 15px;
+}
+
+.loader{
+    display: none;
+    margin-top: 100px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+   margin: 0;
+}
+
+.product-wrapper{
+    width: 100%;
+    max-width: 500px;
+    background: #e3e3e3;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.back{
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 30px;
+    left: 30px;
 }

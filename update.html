@@ -7,33 +7,37 @@
     <link rel="icon" href="./assets/images/logo.png">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Samir</title>
+    <title>Update</title>
 </head>
 <body>
     <div class="container">
+        <a class="back" href="index.html">Ana Səhifə</a>
         <div class="errorMessage"></div>
         <div class="successMessage"></div>
         <h1 class="title">CRUD by API</h1>
-        <a class="add" href="add.html" title="Add"><i class="bx bx-plus"></i></a>
-        <div class="input-box">
-            <label for="search"><i class="bx bx-search"></i></label>
-            <input type="text" id="search" placeholder="Search...">
-        </div>
         <table class="table">
             <thead>
                 <tr>
-                    <th>Id</th>
+                    <th>id</th>
                     <th>Name</th>
                     <th>Price</th>
                     <th>Stock</th>
-                    <th class="buttons"></th>
+                    <th></th>
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><input class="update-name" type="text" placeholder="Name"></td>
+                    <td><input class="update-price" type="number" placeholder="Price"></td>
+                    <td><input class="update-stock" type="number" placeholder="Stock"></td>
+                    <td><button class="update-btn">Update</button></td>
+                </tr>
+            </tbody>
         </table>
         <img src="./assets/images/load.gif" alt="load" class="loader">
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/update.js"></script>
 </body>
 </html>
