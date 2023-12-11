@@ -110,7 +110,7 @@ button:hover, a:hover{
 }
 
 .errorMessage{
-    position: absolute;
+    position: fixed;
     background: rgba(255, 0, 0, .3);
     border: solid 2px red;
     width: 100%;
@@ -133,7 +133,7 @@ button:hover, a:hover{
 }
 
 .successMessage{
-    position: absolute;
+    position: fixed;
     background: rgba(0, 255, 0, .3);
     border: solid 2px green;
     width: 100%;
